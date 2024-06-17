@@ -33,7 +33,8 @@ COMMAND           FUNCTION
 Examples:
 
 perl prv.pl /path/to/directory
-perl prv.pl -k /path/to/directory
+perl prv.pl /path/to/directory -k
+perl prv.pl /path/to/directory --keep
 ```
 
 ---
