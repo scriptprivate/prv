@@ -7,7 +7,7 @@
 
 ### Summary
 
-This Perl utility allows users to easily mass-rename files in a directory through a terminal interface. You can interactively edit filenames and choose to keep file extensions unchanged using the `-k` or `--keep` option.
+This Perl utility allows users to easily mass-rename files in a directory through a terminal interface. You can interactively edit filenames and choose to keep file extensions unchanged using the `-k` or `--keep` option. Additionally, you can filter files by specifying file extensions with the `-f` or `--filter` option.
 
 ---
 
@@ -29,12 +29,16 @@ $ cpanm --installdeps .
 COMMAND           FUNCTION
 /path/to/dir      Specify the directory containing files to rename
 -k, --keep        Keep the file extensions unchanged during renaming
+-f, --filter      Filter files by specified extensions
 
 Examples:
 
 perl prv.pl /path/to/directory
 perl prv.pl /path/to/directory -k
 perl prv.pl /path/to/directory --keep
+perl prv.pl /path/to/directory -k -f .jpg .png
+perl prv.pl /path/to/directory --keep --filter .jpg .png
+
 ```
 
 ---
